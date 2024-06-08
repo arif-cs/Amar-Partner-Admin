@@ -10,6 +10,8 @@ import {
 import User from './pages/Users/User.jsx';
 import Main from './pages/Main/Main.jsx';
 import Roles from './pages/Roles/Roles.jsx';
+import Banner from './pages/Banner/Banner.jsx';
+import Notice from './pages/Notice/Notice.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -26,6 +28,14 @@ const router = createBrowserRouter([
   {
     path: "roles",
     element: <Roles></Roles>
+  },
+  {
+    path: "banner",
+    element:<Banner></Banner>
+  },
+  {
+    path: "notice",
+    element: <Notice></Notice>
   }
 
 ]);

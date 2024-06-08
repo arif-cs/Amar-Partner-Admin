@@ -2,6 +2,7 @@ import React from 'react';
 import { BsThreeDots } from "react-icons/bs";
 import Navbar from '../../layout/Navbar/Navbar';
 import Sidebar from '../../layout/SideBar/Sidebar';
+import { IoBarChart } from "react-icons/io5";
 
 const User = () => {
     return (
@@ -12,25 +13,37 @@ const User = () => {
                 </div>
                 <div className='flex justify-between'>
                     <Sidebar></Sidebar>
-                    <div className='w-full ml-5'>
+                    <div className='w-full'>
                         <div className='flex gap-5 m-5 justify-around'>
-                            <div className='bg-slate-300 p-5'>
-                                <div className='flex'>
-                                    <h1 className='text-black'>Total Users</h1>
-                                    <select>
-                                        <option value="">30 Days</option>
-                                        <option value="">30 Days</option>
-                                        <option value="">30 Days</option>
-                                    </select>
+                            <div className="card p-8 w-96 bg-slate-200">
+                                <div className=" flex justify-between">
+                                    <div>
+                                        <h2 className="card-title">Total User</h2>
+                                    </div>
+                                    <div>
+                                        <select className='border rounded-md'>
+                                            <option value="">30 Days</option>
+                                            <option value="">30 Days</option>
+                                            <option value="">30 Days</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h2 className='flex text-3xl gap-4 mt-5'>
+                                        <IoBarChart />
+                                        <h1 className='font-bold'>7</h1>
+                                    </h2>
                                 </div>
                             </div>
-                            <div className='bg-slate-300 p-5'>
-                                <h1>7 Days</h1>
-                                <select>
-                                    <option value="">Lifetime</option>
-                                    <option value="">7 Days</option>
-                                    <option value="">30 Days</option>
-                                </select>
+                            <div className="card w-96 bg-slate-200">
+                                <div className="card-body p-8 flex justify-between">
+                                    <div>
+                                        <h2 className="card-title">Total Call Life Time</h2>
+                                    </div>
+                                    <div>
+                                        <h2 className='text-3xl font-bold'>43</h2>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div>
@@ -45,7 +58,7 @@ const User = () => {
                                     </label>
                                 </div>
                                 <div>
-                                    <button className="btn btn-xs lg:btn-md ">Create User </button>
+                                    <button className="btn btn-xs btn-secondary lg:btn-md ">Create User </button>
                                 </div>
                             </div>
                         </div>

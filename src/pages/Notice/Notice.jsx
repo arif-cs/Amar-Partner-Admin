@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from '../../layout/Navbar/Navbar';
 import Sidebar from '../../layout/SideBar/Sidebar';
 
-const Roles = () => {
+const Notice = () => {
     return (
         <>
             <div>
@@ -13,7 +13,7 @@ const Roles = () => {
                 <div className='flex' >
                     <Sidebar></Sidebar>
                     <div>
-                        <h1>This Is Roles Page</h1>
+                        <h1>This Is Notice Page</h1>
                     </div>
                 </div>
             </div>
@@ -21,4 +21,4 @@ const Roles = () => {
     );
 };
 
-export default Roles;
+export default Notice;
