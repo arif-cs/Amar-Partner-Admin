@@ -8,6 +8,8 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import User from './pages/Users/User.jsx';
+import Main from './pages/Main/Main.jsx';
+import Roles from './pages/Roles/Roles.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -16,6 +18,14 @@ const router = createBrowserRouter([
   {
     path:'users',
     element:<User></User>
+  },
+  {
+    path:"home",
+    element:<Main></Main>
+  },
+  {
+    path: "roles",
+    element: <Roles></Roles>
   }
 
 ]);

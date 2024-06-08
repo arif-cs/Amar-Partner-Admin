@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 import Sidebar from '../SideBar/Sidebar';
+import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -26,6 +27,9 @@ const Navbar = () => {
                 <div className="navbar bg-base-100">
                     <div className="flex-1">
                         <a className="btn btn-ghost text-xl">Amader Partner Admin</a>
+                    </div>
+                    <div>
+                        <Link to="/">  <a > Home</a>  </Link>
                     </div>
                     <div>
                         <label className="swap swap-rotate">
